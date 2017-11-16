@@ -29,17 +29,19 @@
   			<version>2.10.1</version>
   			<configuration>
   			    <generateApplicationXml>true</generateApplicationXml>
-  				<webModule>
-                    <groupId>fr.afcepf.dja</groupId>
-                    <artifactId>cdiWeb</artifactId>
-                    <contextRoot>cdiWeb</contextRoot>
-                    <bundleFileName>cdiWeb.war</bundleFileName>                  
-                </webModule>
-                <ejbModule>
-                    <groupId>fr.afcepf.dja</groupId>
-                    <artifactId>soapEjb</artifactId> 
-                    <bundleFileName>soapEjb.jar</bundleFileName>                  
-                </ejbModule>
+  			    <modules>
+	  				<webModule>
+	                    <groupId>fr.afcepf.dja</groupId>
+	                    <artifactId>cdiWeb</artifactId>
+	                    <contextRoot>cdiWeb</contextRoot>
+	                    <bundleFileName>cdiWeb.war</bundleFileName>                  
+	                </webModule>
+	                <ejbModule>
+	                    <groupId>fr.afcepf.dja</groupId>
+	                    <artifactId>soapEjb</artifactId> 
+	                    <bundleFileName>soapEjb.jar</bundleFileName>                  
+	                </ejbModule>
+                </modules>
                 <version>7</version> <!-- 6: JEE6 pour jboss7 mini,
                                           7: JEE7 pour wildfly 10 -->
                 
